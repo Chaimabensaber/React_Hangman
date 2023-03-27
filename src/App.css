@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "MontserratL";
+  src: url("./fonts/Montserrat-Light.ttf");
+}
+
+:root {
+  --main-font : MontserratL;
+}
+
+body {
+  background-color: #171717;
+  color: white;
+  font-family: var(--main-font);
+  margin: 0;
+}
+
+/*Nav*/
+nav {
+  padding: 2vh 2vw;
+}
+
+nav img {
+  width: auto;
+  height: 55px;
+}
+
+/*Main*/
+main {
+  margin: 4vh 5vw;
+}
+
+/*Word*/
+.word {
+  width: fit-content;
+  border-radius: 8px;
+  padding: 12px 35px;
+  background-color: #282828;
+}
+
+.word p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/*Keyboard*/
+.keyboard {
+  margin: 5vh 0;
+}
+
+.keyboard .buttons {
+  gap: 10px;
+}
+
+.keyboard button{
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  margin: 0 3px;
+  background-color: transparent;
+  border: solid 2px #abf3f3b4;
+  color: white;
+  border-radius: 4px;
+}
+
+.keyboard button:hover {
+  background-color:#abf3f3b4 ;
+  color: #171717;
+}
+
+.keyboard button:disabled {
+  background-color: #282828;
+  color: #171717;
+  border: transparent;
+  cursor: default;
+}
+
+/*Button*/
+.youwon button, .gameover button {
+  padding: 8px 25px;
+  background-color: transparent;
+  border: 2px solid #abf3f3b4;
+  color: white;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.youwon button:hover, .gameover button:hover {
+  background-color: #abf3f3b4;
+  color: #171717;
+  transition: 0.2s;
+}
